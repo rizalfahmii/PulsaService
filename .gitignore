@@ -1,0 +1,73 @@
+# Build results
+bin/
+obj/
+out/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test results
+TestResults/
+coverage/
+coverage.*
+
+# Publish
+publish/
+
+# Local settings / secrets
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Environment files
+.env
+.env.*
+
+# Database local files
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# JetBrains
+.idea/
+
+# Node modules (kalau nanti frontend ada di repo yang sama)
+node_modules/
+dist/
+
+# Generated files
+Generated/

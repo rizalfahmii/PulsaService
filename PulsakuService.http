@@ -1,0 +1,6 @@
+@PulsakuService_HostAddress = http://localhost:5032
+
+GET {{PulsakuService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
