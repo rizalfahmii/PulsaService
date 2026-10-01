@@ -19,5 +19,11 @@ pipeline {
                 sh 'dotnet test --configuration Release --no-build'
             }
         }
+
+        stage('Docker Build') {
+            steps {
+                sh 'docker build -t pulsaku-service:${BUILD_NUMBER} .'
+            }
+        }
     }
 }
