@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Restore') {
             steps {
-                checkout scm
+                sh 'dotnet restore PulsakuService.csproj'
             }
         }
 
-        stage('Test Jenkins') {
+        stage('Build') {
             steps {
-                echo 'Jenkins berhasil mengambil project Pulsaku!'
+                sh 'dotnet build PulsakuService.csproj --configuration Release --no-restore'
             }
         }
     }
