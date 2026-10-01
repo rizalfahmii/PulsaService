@@ -13,5 +13,11 @@ pipeline {
                 sh 'dotnet build PulsakuService.csproj --configuration Release --no-restore'
             }
         }
+
+        stage('Test') {
+            steps {
+                sh 'dotnet test --configuration Release --no-build'
+            }
+        }
     }
 }
